@@ -27,7 +27,7 @@ namespace SpeechRecLib
         {
             if (e.Recording)
             {
-                Console.WriteLine("Please start speaking");
+                //Console.WriteLine("Please start speaking");
             }
         }
 

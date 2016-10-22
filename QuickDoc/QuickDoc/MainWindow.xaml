@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuickDoc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="600">
-    <Grid>
-        <Grid.RowDefinitions>
+        Title="MainWindow" Width="128" Height="128">
+    <Grid Background="Transparent">
+        <Image Source="Images/Microphone-icon.png"/>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
@@ -19,6 +20,6 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="startRecordingBtn" Grid.Column="0" Content="Start Commenting" FontSize="20 pt" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
             <Button x:Name="endRecordingBtn" Grid.Column="1" Content="End Commenting" FontSize="20 pt" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
-        </Grid>
+        </Grid>-->
     </Grid>
 </Window>
