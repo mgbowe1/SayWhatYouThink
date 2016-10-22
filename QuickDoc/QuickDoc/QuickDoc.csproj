@@ -80,7 +80,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CommentManager.cs" />
+    <Compile Include="CommentType.cs" />
     <Compile Include="SpeechRecManager.cs" />
+    <Compile Include="VoiceCommands.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
