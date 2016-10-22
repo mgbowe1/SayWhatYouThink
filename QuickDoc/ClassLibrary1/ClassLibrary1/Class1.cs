@@ -14,6 +14,9 @@ namespace STT
         private MicrophoneRecognitionClient _mic_client;
         private SpeechRecognitionMode _mode;
 
+        public delegate void SpeechReceivedHandler(object sender, SpeechReceivedEventArgs e);
+        public event SpeechReceivedHandler OnSpeechReceived;
+
         public SpeechRec(string api_key)
         {
             _api_key = api_key;
@@ -28,14 +31,30 @@ namespace STT
             }
         }
 
-        private void _partial_result_handler(object sender, PartialSpeechResponseEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         private void _full_result_handler(object sender, SpeechResponseEventArgs e)
         {
-            throw new NotImplementedException();
+            if (OnSpeechReceived == null) return;
+
+            if (e.PhraseResponse.RecognitionStatus == RecognitionStatus.NoMatch)
+            {
+                SpeechReceivedEventArgs args = new SpeechReceivedEventArgs(false, "No Matches");
+                OnSpeechReceived(this, args);
+            }
+            else
+            {
+                var viable_results = e.PhraseResponse.Results.Where((x) => (x.Confidence == Confidence.High || x.Confidence == Confidence.Normal));
+                if(viable_results.Count() == 0)
+                {
+                    SpeechReceivedEventArgs args = new SpeechReceivedEventArgs(false, "No Viable Matches");
+                    OnSpeechReceived(this, args);
+                }
+                else
+                {
+                    var best = viable_results.First().DisplayText;
+                    SpeechReceivedEventArgs args = new SpeechReceivedEventArgs(true, best);
+                    OnSpeechReceived(this, args);
+                }
+            }
         }
 
         private void _conversion_error_handler(object sender, SpeechErrorEventArgs e)
@@ -48,7 +67,6 @@ namespace STT
             _mic_client = SpeechRecognitionServiceFactory.CreateMicrophoneClient(_mode, "en-US", _api_key);
 
             _mic_client.OnMicrophoneStatus += _mic_status_handler;
-            _mic_client.OnPartialResponseReceived += _partial_result_handler;
             _mic_client.OnResponseReceived += _full_result_handler;
             _mic_client.OnConversationError += _conversion_error_handler;
         }
@@ -57,6 +75,19 @@ namespace STT
         {
             this._create_mic_client();
             _mic_client.StartMicAndRecognition();
+        }
+
+    }
+
+    public class SpeechReceivedEventArgs : EventArgs
+    {
+        public bool Success { get; private set; }
+        public string Result { get; private set; }
+
+        public SpeechReceivedEventArgs(bool success, string result)
+        {
+            Success = success;
+            Result = result;
         }
     }
 }
