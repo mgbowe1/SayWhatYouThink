@@ -15,3 +15,6 @@ C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.csprojResolveAssem
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\bin\Debug\QuickDoc.exe.config
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\obj\Debug\QuickDoc.exe
 C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\obj\Debug\QuickDoc.pdb
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\SayWhatYouThink\QuickDoc\QuickDoc\bin\Debug\QuickDoc.exe.config
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\SayWhatYouThink\QuickDoc\QuickDoc\obj\Debug\QuickDoc.exe
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\SayWhatYouThink\QuickDoc\QuickDoc\obj\Debug\QuickDoc.pdb
