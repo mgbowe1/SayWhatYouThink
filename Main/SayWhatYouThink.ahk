@@ -2,19 +2,30 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
+	
+; Toggle hot key trigger
 ^!s::Suspend
 
-^p::
-	value := RunWaitOne("QuickDoc.exe " . "P")
+; Hot Key for C style comments
+^!c::
+	comment := RunWaitOne("QuickDoc.exe " . "C")	; Store comments from user using speech to text program
+	Send, %comment%	; Send comment text to editor
+	Return
+
+; Hot Key for Python
+^!p::
+	comment := RunWaitOne("QuickDoc.exe " . "P")	; Store comments from user using speech to text program
+	Send, %comment%	; Send comment text to editor
+	Return
 	
-	RunWaitOne(command) {
-    shell := ComObjCreate("WScript.Shell")
-    ; Execute a single command via cmd.exe
+; Hot Key for LISP style comments
+^!l::
+	comment := RunWaitOne("QuickDoc.exe " . "L")	; Store comments from user using speech to text program
+	Send, %comment%	; Send comment text to editor
+	Return
+	
+RunWaitOne(command) {
+    shell := ComObjCreate("WScript.Shell")	; Execute speech to text program
     exec := shell.Exec(command)
-    ; Read and return the command's output
-    return exec.StdOut.ReadAll()
-	}
-	
-	Send, %value%
-	
+    return exec.StdOut.ReadAll()	; Read and return the comment text
+}
