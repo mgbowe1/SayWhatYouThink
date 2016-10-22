@@ -51,7 +51,7 @@ namespace QuickDoc
 
         public void StopListeningForComment()
         {
-
+            _speechRec.StopSpeechRec();
         }
     }
 }
