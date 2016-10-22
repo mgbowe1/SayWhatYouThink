@@ -1,0 +1,14 @@
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Release\QuickDoc.exe.config
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Release\QuickDoc.exe
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Release\QuickDoc.pdb
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.csprojResolveAssemblyReference.cache
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\MainWindow.g.cs
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\App.g.cs
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc_MarkupCompile.cache
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc_MarkupCompile.lref
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\MainWindow.baml
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.g.resources
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.Properties.Resources.resources
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.csproj.GenerateResource.Cache
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.exe
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Release\QuickDoc.pdb

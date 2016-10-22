@@ -1,0 +1,17 @@
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Debug\QuickDoc.exe.config
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Debug\QuickDoc.exe
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\bin\Debug\QuickDoc.pdb
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\MainWindow.g.cs
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\App.g.cs
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc_MarkupCompile.cache
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc_MarkupCompile.lref
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\MainWindow.baml
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.g.resources
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.Properties.Resources.resources
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.csproj.GenerateResource.Cache
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.exe
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.pdb
+C:\WORKSPACE\HackHarvard\QuickDoc\QuickDoc\obj\Debug\QuickDoc.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\bin\Debug\QuickDoc.exe.config
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\obj\Debug\QuickDoc.exe
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\QuickDoc\QuickDoc\obj\Debug\QuickDoc.pdb
