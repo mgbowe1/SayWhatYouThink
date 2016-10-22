@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuickDoc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="600">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="speechText" HorizontalAlignment="Stretch" Grid.Row="0" Margin="50" FontSize="22 pt"/>
+        <Button x:Name="startRecordingBtn" Content="Start" FontSize="20 pt" Grid.Row="1" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
