@@ -4,18 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DocumentLibrary
+namespace Documentation
 {
-    public class Documentation
+    public abstract class Documentation
     {
-        public string GetFormattedComment(string text)
-        {
-            return GetCommentPrefix() + text;
-        }
+        protected string Message { get; set; }
 
-        protected virtual string GetCommentPrefix()
-        {
-            return "//";
-        }
+        public abstract string getDocumentedString();
     }
 }
