@@ -2,13 +2,19 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-	
+
+DllCall("AllocConsole")
+WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
+
 ; Toggle hot key trigger
 ^!s::Suspend
 
 ; Hot Key for C style comments
 ^!c::
-	comment := RunWaitOne("Test.exe " . "C")	; Store comments from user using speech to text program
+	SplashImage, test.png, B Y0
+	Winset, TransColor, ECE9D8
+	comment := RunWaitOne("node test.js ")	; Store comments from user using speech to text program
+	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
 

@@ -3,12 +3,17 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	
+DllCall("AllocConsole")
+WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
+
 ; Toggle hot key trigger
 ^!s::Suspend
 
 ; Hot Key for C style comments
 ^!c::
+	SplashImage, listening.jpg
 	comment := RunWaitOne("QuickDoc.exe " . "C")	; Store comments from user using speech to text program
+	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
 
