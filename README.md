@@ -17,6 +17,6 @@ Windows only for now,maybe we can make it cross-platform later.
 
 # Team Members
 * Michael Bowe
-*
-*
-*
+* Purva Kamat
+* Tirthraj Parmar
+* Joyal Shah
