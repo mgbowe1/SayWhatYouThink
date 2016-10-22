@@ -33,7 +33,6 @@ namespace SpeechRecLib
 
         private void _full_result_handler(object sender, SpeechResponseEventArgs e)
         {
-            _mic_client.EndMicAndRecognition();
             if (OnSpeechReceived == null) return;
 
             if (e.PhraseResponse.RecognitionStatus == RecognitionStatus.NoMatch)
@@ -76,6 +75,11 @@ namespace SpeechRecLib
         {
             this._create_mic_client();
             _mic_client.StartMicAndRecognition();
+        }
+
+        public void StopSpeechRec()
+        {
+            _mic_client.EndMicAndRecognition();
         }
 
     }
