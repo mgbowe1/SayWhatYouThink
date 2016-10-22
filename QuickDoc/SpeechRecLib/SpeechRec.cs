@@ -42,6 +42,11 @@ namespace SpeechRecLib
             }
             else
             {
+                if(e.PhraseResponse.RecognitionStatus == RecognitionStatus.DictationEndSilenceTimeout ||
+                    e.PhraseResponse.RecognitionStatus == RecognitionStatus.EndOfDictation)
+                {
+                    _mic_client.EndMicAndRecognition();
+                }
                 var viable_results = e.PhraseResponse.Results.Where((x) => (x.Confidence == Confidence.High || x.Confidence == Confidence.Normal));
                 if (viable_results.Count() == 0)
                 {
