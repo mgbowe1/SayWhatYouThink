@@ -1,1 +1,1 @@
-Small test files.
+Entry point for program execution.
