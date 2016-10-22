@@ -125,6 +125,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DocumentLibrary\DocumentLibrary.csproj">
+      <Project>{3bbe1486-c955-4e6b-b254-48af026c3447}</Project>
+      <Name>DocumentLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SpeechRecLib\SpeechRecLib.csproj">
       <Project>{4f34c986-84f3-4acd-8621-d71ffff465ab}</Project>
       <Name>SpeechRecLib</Name>

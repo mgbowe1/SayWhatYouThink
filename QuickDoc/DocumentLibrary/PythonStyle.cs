@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DocumentLibrary
 {
-    public class CommentStyle
+    public class PythonStyle : Documentation
     {
+        protected override string GetCommentPrefix()
+        {
+            return "#";
+        }
     }
 }

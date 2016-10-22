@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommentStyle.cs" />
+    <Compile Include="Documentation.cs" />
+    <Compile Include="JavaStyle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PythonStyle.cs" />
+    <Compile Include="RacketStyle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
