@@ -12,6 +12,13 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="speechText" HorizontalAlignment="Stretch" Grid.Row="0" Margin="50" FontSize="22 pt"/>
-        <Button x:Name="startRecordingBtn" Content="Start" FontSize="20 pt" Grid.Row="1" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="startRecordingBtn" Grid.Column="0" Content="Start Commenting" FontSize="20 pt" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
+            <Button x:Name="endRecordingBtn" Grid.Column="1" Content="End Commenting" FontSize="20 pt" Width="250" Height="100" Margin="20" HorizontalAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>

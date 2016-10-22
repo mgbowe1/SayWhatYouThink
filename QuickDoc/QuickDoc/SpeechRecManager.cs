@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SpeechRecLib;
 
 
@@ -44,15 +40,18 @@ namespace QuickDoc
             if (e.Success)
             {
                 _response = e.Result;
-
-                if (OnSpeechReceived != null)
-                    OnSpeechReceived(this, new EventArgs());
+                OnSpeechReceived?.Invoke(this, new EventArgs());
             }
         }
 
         public string GetResponse()
         {
             return _response;
+        }
+
+        public void StopListeningForComment()
+        {
+
         }
     }
 }

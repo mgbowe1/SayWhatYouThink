@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Input;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 
 namespace QuickDoc
 {
@@ -13,6 +10,12 @@ namespace QuickDoc
         {
             InitializeComponent();
             startRecordingBtn.Click += StartRecordingBtn_Click;
+            endRecordingBtn.Click += EndRecordingBtn_Click;
+        }
+
+        private void EndRecordingBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SpeechRecManager.Instance.StopListeningForComment();
         }
 
         private void StartRecordingBtn_Click(object sender, RoutedEventArgs e)
