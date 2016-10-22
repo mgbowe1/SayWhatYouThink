@@ -5,8 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ^!s::Suspend
 
-^j::
-	value := RunWaitOne("node " . A_ScriptDir . "\test.js")
+^p::
+	value := RunWaitOne("QuickDoc.exe " . "P")
 	
 	RunWaitOne(command) {
     shell := ComObjCreate("WScript.Shell")
