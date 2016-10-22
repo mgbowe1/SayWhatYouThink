@@ -33,6 +33,7 @@ namespace STT
 
         private void _full_result_handler(object sender, SpeechResponseEventArgs e)
         {
+            _mic_client.EndMicAndRecognition();
             if (OnSpeechReceived == null) return;
 
             if (e.PhraseResponse.RecognitionStatus == RecognitionStatus.NoMatch)
