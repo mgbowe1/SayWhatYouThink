@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Documentation
-{
+{   
     public class PythonDocumentation : Documentation
     {
         private static string COMMENT_PREFIX = "{#} ";
