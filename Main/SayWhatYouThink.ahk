@@ -7,7 +7,7 @@ DllCall("AllocConsole")
 WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
 ; Toggle hot key trigger
-^!s::Suspend
+^!x::Suspend
 
 ; Hot Key for simple speach to text
 ^!n::
