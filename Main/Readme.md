@@ -1,4 +1,4 @@
-# How to run
+# How to run?
 
 1. Get contents on Main directory except Test directory.
 2. Execute SayWhatYouThink.exe
