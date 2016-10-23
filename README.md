@@ -26,3 +26,7 @@ Windows only for now, maybe we can make it cross-platform later if we can find a
   - AutoHotKey guru and Doc libs
 * Joyal Shah
   - Yet another C#er
+
+# How to use?
+
+https://github.com/mgbowe1/SayWhatYouThink/tree/master/Main
