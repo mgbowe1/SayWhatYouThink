@@ -11,12 +11,14 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
 ; Hot Key for C style comments
 ^!c::
-	SplashImage, test.png, B Y0
-	Winset, TransColor, ECE9D8
+	SplashImage, test.jpg, B Y0
+	;Winset, TransColor, ECE9D8
 	comment := RunWaitOne("node test.js ")	; Store comments from user using speech to text program
 	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
+Hi
+asd
 
 ; Hot Key for Python
 ^!p::
