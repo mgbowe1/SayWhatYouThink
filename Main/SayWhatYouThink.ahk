@@ -6,6 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 DllCall("AllocConsole")
 WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
+; Hot Key for termination
+^!z::ExitApp
+
 ; Toggle hot key trigger
 ^!x::Suspend
 
