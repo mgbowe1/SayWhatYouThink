@@ -2,7 +2,7 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-	
+
 DllCall("AllocConsole")
 WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
@@ -11,21 +11,23 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
 ; Hot Key for C style comments
 ^!c::
-	SplashImage, listening.jpg
-	comment := RunWaitOne("QuickDoc.exe " . "C")	; Store comments from user using speech to text program
+	SplashImage, mic.png, B Y0
+	comment := RunWaitOne("QuickDocConsole.exe " . "C")	; Store comments from user using speech to text program
 	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
 
 ; Hot Key for Python
 ^!p::
-	comment := RunWaitOne("QuickDoc.exe " . "P")	; Store comments from user using speech to text program
+	SplashImage, mic.png, B Y0
+	comment := RunWaitOne("QuickDocConsole.exe " . "P")	; Store comments from user using speech to text program
 	Send, %comment%	; Send comment text to editor
 	Return
 	
 ; Hot Key for LISP style comments
 ^!l::
-	comment := RunWaitOne("QuickDoc.exe " . "L")	; Store comments from user using speech to text program
+	SplashImage, mic.png, B Y0
+	comment := RunWaitOne("QuickDocConsole.exe " . "L")	; Store comments from user using speech to text program
 	Send, %comment%	; Send comment text to editor
 	Return
 	
