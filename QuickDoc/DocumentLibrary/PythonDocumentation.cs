@@ -8,7 +8,7 @@ namespace Documentation
 {
     public class PythonDocumentation : Documentation
     {
-        private static string COMMENT_PREFIX = "# ";
+        private static string COMMENT_PREFIX = "{#} ";
 
         public override string getDocumentedString()
         {
