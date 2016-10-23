@@ -39,6 +39,9 @@ namespace QuickDocConsole
             Documentation.Documentation doc = null;
             switch (lang)
             {
+                case "N":
+                    doc = new Documentation.Documentation();
+                    break;
                 case "P":
                     doc = new PythonDocumentation();
                     break;

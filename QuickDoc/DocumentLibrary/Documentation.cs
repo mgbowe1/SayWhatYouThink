@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Documentation
 {
-    public abstract class Documentation
+    public class Documentation
     {
         public string Message { get; set; }
 
-        public abstract string getDocumentedString();
+        public virtual string getDocumentedString()
+        {
+            return Message;
+        }
     }
 }

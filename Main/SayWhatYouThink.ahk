@@ -9,6 +9,14 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 ; Toggle hot key trigger
 ^!s::Suspend
 
+; Hot Key for simple speach to text
+^!n::
+	SplashImage, mic.png, B Y0
+	comment := RunWaitOne("QuickDocConsole.exe " . "N")	; Store comments from user using speech to text program
+	SplashImage, Off
+	Send, %comment%	; Send comment text to editor
+	Return
+
 ; Hot Key for C style comments
 ^!c::
 	SplashImage, mic.png, B Y0
