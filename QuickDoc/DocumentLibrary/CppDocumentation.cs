@@ -12,7 +12,7 @@ namespace Documentation
 
         public override string getDocumentedString()
         {
-            return COMMENT_PREFIX + base.Message;
+            return CppDocumentation.COMMENT_PREFIX + base.Message;
         }
     }
 }
