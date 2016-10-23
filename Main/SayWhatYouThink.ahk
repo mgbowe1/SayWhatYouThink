@@ -21,6 +21,7 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 ^!p::
 	SplashImage, mic.png, B Y0
 	comment := RunWaitOne("QuickDocConsole.exe " . "P")	; Store comments from user using speech to text program
+	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
 	
@@ -28,6 +29,7 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 ^!l::
 	SplashImage, mic.png, B Y0
 	comment := RunWaitOne("QuickDocConsole.exe " . "L")	; Store comments from user using speech to text program
+	SplashImage, Off
 	Send, %comment%	; Send comment text to editor
 	Return
 	
