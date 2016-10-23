@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Documentation
 {
-    class CDocumentation : Documentation
+    public class CDocumentation : Documentation
     {
         private static string COMMENT_PREFIX = "// ";
 

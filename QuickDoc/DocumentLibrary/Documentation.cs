@@ -8,7 +8,7 @@ namespace Documentation
 {
     public abstract class Documentation
     {
-        protected string Message { get; set; }
+        public string Message { get; set; }
 
         public abstract string getDocumentedString();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Documentation
 {
-    class JavaDocumentation : Documentation
+    public class JavaDocumentation : Documentation
     {
         private static string COMMENT_PREFIX = "// ";
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Documentation
 {
-    class RacketDocumentation : Documentation
+    public class RacketDocumentation : Documentation
     {
         private static string COMMENT_PREFIX = "; ";
 

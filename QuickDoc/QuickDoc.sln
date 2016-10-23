@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickDoc", "QuickDoc\QuickD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechRecLib", "SpeechRecLib\SpeechRecLib.csproj", "{4F34C986-84F3-4ACD-8621-D71FFFF465AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentLibrary", "DocumentLibrary\DocumentLibrary.csproj", "{3BBE1486-C955-4E6B-B254-48AF026C3447}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickDocConsole", "QuickDocConsole\QuickDocConsole.csproj", "{FA570B9F-A401-4383-8D8F-732F864F23A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentationLib", "DocumentLibrary\DocumentationLib.csproj", "{F8F42B11-BA28-41CC-8F39-999B5EA7F752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +35,6 @@ Global
 		{4F34C986-84F3-4ACD-8621-D71FFFF465AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F34C986-84F3-4ACD-8621-D71FFFF465AB}.Release|x64.ActiveCfg = Release|x64
 		{4F34C986-84F3-4ACD-8621-D71FFFF465AB}.Release|x64.Build.0 = Release|x64
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Debug|x64.Build.0 = Debug|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Release|x64.ActiveCfg = Release|Any CPU
-		{3BBE1486-C955-4E6B-B254-48AF026C3447}.Release|x64.Build.0 = Release|Any CPU
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -51,6 +43,14 @@ Global
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Release|x64.ActiveCfg = Release|Any CPU
 		{FA570B9F-A401-4383-8D8F-732F864F23A8}.Release|x64.Build.0 = Release|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Debug|x64.Build.0 = Debug|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8F42B11-BA28-41CC-8F39-999B5EA7F752}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
