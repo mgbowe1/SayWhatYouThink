@@ -8,3 +8,5 @@
   * Press Ctrl + Alt + P and SayWhatYouThink for Python style comments.
   * Press Ctrl + Alt + L and SayWhatYouThink for LISP style comments.
   * Press Ctrl + Alt + N to simply write what you speak.
+5. Press Ctrl + Alt + X to toggle hot key suspension.
+6. Press Ctrl + Alt + Z to exit at any point of time.
