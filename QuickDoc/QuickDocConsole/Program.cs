@@ -30,8 +30,7 @@ namespace QuickDocConsole
         {
             doc.Message = SpeechRecManager.Instance.GetResponse();
             string response = doc.getDocumentedString();
-            Console.WriteLine(response);
-            //Console.ReadLine();
+            Console.Write(response);
             waitForMessage = false;
         }
 
