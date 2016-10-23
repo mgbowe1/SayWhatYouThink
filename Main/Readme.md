@@ -7,3 +7,4 @@
   * Press Ctrl + Alt + C and SayWhatYouThink for C style comments.
   * Press Ctrl + Alt + P and SayWhatYouThink for Python style comments.
   * Press Ctrl + Alt + L and SayWhatYouThink for LISP style comments.
+  * Press Ctrl + Alt + N to simply write what you speak.
