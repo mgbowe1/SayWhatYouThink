@@ -12,16 +12,17 @@ Windows only for now, maybe we can make it cross-platform later if we can find a
 # Programming Language Support
 * C/C++
 * Java
+* JavaScript
 * Python
 * C#
 * Racket
 
 # Team Members
 * Michael Bowe
-  - Oroginal Idea, and Speech Recognition API wrapper
+  - Original !dea, and Speech Recognition API wrapper
 * Purva Kamat 
   - C#er
 * Tirthraj Parmar 
-  - AutoHotkey guru and Doc libs
-* Joyal Shah 
-  - yet anther C#er
+  - AutoHotKey guru and Doc libs
+* Joyal Shah
+  - Yet another C#er
