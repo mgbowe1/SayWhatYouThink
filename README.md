@@ -29,4 +29,4 @@ Windows only for now, maybe we can make it cross-platform later if we can find a
 
 # How to use?
 
-https://github.com/mgbowe1/SayWhatYouThink/tree/master/Main
+https://github.com/mgbowe1/SayWhatYouThink/blob/master/Main/Readme.md
